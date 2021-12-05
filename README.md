@@ -1,4 +1,4 @@
-### chrome brovser plugin 'linkplagin'
+### chrome browser plugin 'linkplagin'
 
 functionality:
 - favorite link
