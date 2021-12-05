@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">	
+   <title>Запускатор</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--контейнер, содержащий название, логотип и номер версии  -->
+    <div class="modal-header">
+        <h1 class="logo">
+          <img class="logo-icon" src="icon.png">
+           <span class='title'>zZzapyskatorzZz</span>
+          <span class="version">(1.0.0)</span>
+       </h1>
+      </div>
+      <div class="modal-content">
+        <p>Hot links</p>
+      </div>
+  <!--контейнер, содержащий контейнеры с иконками-->
+  <div class="modal-icons">
+    <div class="flex-container">
+      <div class="flex">
+        <a href="https://github.com/ArturStahov" target="_blank">
+          <img class="icon-link" src="./image/github.png">
+        </a>
+        <span class="title-link">GIT</span>
+      </div>
+      <div class="flex">
+        <a href="https://www.linkedin.com/in/artur-stakhov/" target="_blank">
+          <img class="icon-link" src="./image/linkedin.png">
+        </a>
+        <span class="title-link">linkedin</span>
+      </div>
+      <div class="flex">
+        <a href="https://dashboard.heroku.com/apps" target="_blank">
+          <img class="icon-link" src="./image/cloud.png">
+        </a>
+        <span class="title-link">heroku</span>
+      </div>
+      <div class="flex">
+        <a href="https://cloud.yappicorp.com.ua/auth" target="_blank">
+          <img class="icon-link" src="./image/education.png">
+        </a>
+        <span class="title-link">English</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-content">
+    <p>History Visit</p>
+      <ul id="historyList"></ul>
+
+      <button type="button" class="btn-danger" data-btn="clear">clear history</button>
+  </div>
+  <script src="./library/moment.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

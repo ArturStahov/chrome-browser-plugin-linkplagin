@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "Test-Plagin",
+	"description": "Запускатор",
+	"version": "1.0.0",
+	"icons": {"128": "icon_128.png"},
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "index.html"
+	},
+	"permissions": ["activeTab"],
+	"background": {
+		"scripts": ["background.js"]
+	  },
+	  "content_scripts": [
+		{
+		  "matches": [
+			"<all_urls>"
+		  ],
+		  "js": ["./library/moment.js","app.js"]
+		}
+	  ]
+}
